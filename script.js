@@ -13,6 +13,15 @@ function generate() {
 
     document.getElementById("display").value = password;
 
-    document.getElementById("lastNums").innerHTML += password + "<br /"
+    document.getElementById("lastNums").innerHTML += password + "<br>"
 
+}
+
+function copyPassword() {
+
+    document.getElementById("display").select();
+
+    document.execCommand("Copy");
+
+    alert("Password coppied to clipboard");
 }
