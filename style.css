@@ -1,18 +1,46 @@
+body {
+    background-color: silver;
+}
+
+.bg-light {
+    background-color: silver;
+}
+
+b {
+    color: rgb(116, 4, 4);
+    text-emphasis: center;
+}
+
 .content {
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: beige;
+    background-color: rgb(116, 4, 4);
     padding: 20px;
-    width: 1000px;
+    width: 100%;
     align-content: center;
+}
+
+h1 {
+    color: seashell;
 }
 
 #display {
     width: 100%;
+    height: 150px;
+    border-style: dashed;
+}
+
+hr {
+    padding: 2px;
+    background-color: silver;
 }
 
 #slider {
     width: 100%;
+}
+
+.previous-passwords {
+    margin-bottom: 20px;
 }
 
 .previous-passwords {
