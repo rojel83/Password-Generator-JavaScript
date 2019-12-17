@@ -14,9 +14,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light" style="background: rgb(155, 154, 154);">
-        <a class="navbar-brand" href="#"><b>Password Generator</b></a>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light" style="background: rgb(155, 154, 154);">
+            <a class="navbar-brand" href="#"><b>Password Generator</b></a>
+        </nav>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -28,7 +30,7 @@
                     <input type="text" id="display">
                     <hr>
                     <br>
-                    <input type="range" min="0" max="50" name="slider" id="slider">
+                    <input type="range" min="8" max="128" name="slider" id="slider">
                     <br><br>
                     <button onclick="generate()">Generate</button>
                     <button onclick="copyPassword()" style="float: right;">Copy to Clipboard</button>
