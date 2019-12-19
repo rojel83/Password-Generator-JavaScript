@@ -7,11 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><b>Random Password Generator</b></a>
+    </nav>
+
     <div class="container">
         <h1>Password Generator</h1>
+        <br>
+        <hr>
+        <br>
         <div class="result-container">
             <span id="result"></span>
             <button class="bnt" id="clipboard">
@@ -19,30 +29,36 @@
             </button>
         </div>
         <div class="settings">
+            <br>
             <div class="setting">
                 <label for="length">Password length</label>
                 <input type="number" id="length" min="8" max="128" value="20" />
             </div>
+            <br>
             <div class="setting">
                 <label for="uppercase">Include uppercase letters
                 </label>
                 <input type="checkbox" id="uppercase" checked>
             </div>
+            <br>
             <div class="setting">
                 <label for="lowercase">Include lowercase letters                    
                 </label>
                 <input type="checkbox" id="lowercase" checked>
             </div>
+            <br>
             <div class="setting">
                 <label for="numbers">Include numbers                    
                 </label>
                 <input type="checkbox" id="numbers" checked>
             </div>
+            <br>
             <div class="setting">
                 <label for="symbols">Include symbols
                 </label>
                 <input type="checkbox" id="symbols" checked>
             </div>
+            <br>
         </div>
         <button class="btn btn-lager" id="generate">
             Generate Password
