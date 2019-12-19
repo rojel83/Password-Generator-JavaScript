@@ -17,14 +17,17 @@ h1 {
 
 .result-container {
     background-color: snow;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 150px;
     color: rgb(5, 5, 5);
     padding: 20px;
+    border: dotted solid black;
 }
 
 .bnt {
     float: right;
+    height: 20px;
+    widows: 400px;
 }
 
 .setting {
@@ -32,7 +35,7 @@ h1 {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
-    width: max-content;
+    width: 250px;
     color: black;
 }
 
@@ -42,5 +45,10 @@ hr {
 
 #generate {
     background-color: silver;
-    margin: 10px;
+    float: right;
+}
+
+#length {
+    background-color: rgb(221, 219, 219);
+    float: right;
 }

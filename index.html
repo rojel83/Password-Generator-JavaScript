@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" deffer href="style.css">
 </head>
 
 
@@ -23,18 +23,25 @@
         <hr>
         <br>
         <div class="result-container">
-            <span id="result"></span>
-            <button class="bnt" id="clipboard">
-                <i class="far fa-clipboard"></i>                
+            <div class="container-result1" style="height: auto;  background: snow;">
+                <span id="result"></span>
+                <button class="bnt" id="clipboard">
+                <i class="far fa-clipboard"></i>
             </button>
-        </div>
-        <div class="settings">
-            <br>
-            <div class="setting">
-                <label for="length">Password length</label>
-                <input type="number" id="length" min="8" max="128" value="20" />
             </div>
-            <br>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="settings">
+            <div class="setting" style="float: left; background-color: silver;">
+                <label for="length" style="float: left;">Password length</label>
+                <input type="number" id="length" min="8" max="128" value="8" />
+            </div>
+            <button class="btn btn-lager" id="generate">
+                Generate Password
+            </button>
+            <br><br><br>
             <div class="setting">
                 <label for="uppercase">Include uppercase letters
                 </label>
@@ -42,13 +49,13 @@
             </div>
             <br>
             <div class="setting">
-                <label for="lowercase">Include lowercase letters                    
+                <label for="lowercase">Include lowercase letters
                 </label>
                 <input type="checkbox" id="lowercase" checked>
             </div>
             <br>
             <div class="setting">
-                <label for="numbers">Include numbers                    
+                <label for="numbers">Include numbers
                 </label>
                 <input type="checkbox" id="numbers" checked>
             </div>
@@ -60,9 +67,6 @@
             </div>
             <br>
         </div>
-        <button class="btn btn-lager" id="generate">
-            Generate Password
-            </button>
     </div>
 
     <script src="script.js"></script>
