@@ -2,10 +2,6 @@ body {
     background-color: silver;
 }
 
-.bg-light {
-    background-color: silver;
-}
-
 b {
     color: rgb(116, 4, 4);
     text-emphasis: center;
@@ -17,6 +13,7 @@ b {
     background-color: rgb(116, 4, 4);
     padding: 20px;
     width: 100%;
+    height: auto;
     align-content: center;
 }
 
@@ -41,8 +38,14 @@ hr {
 
 .previous-passwords {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.previous-passwords {
-    margin-bottom: 20px;
+#length {
+    color: #fff;
+    text-align: center;
+}
+
+label {
+    color: #fff;
 }
