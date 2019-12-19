@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-light bg-light" style="background: rgb(155, 154, 154);">
-            <a class="navbar-brand" href="#"><b>Password Generator</b></a>
+            <a class="navbar-brand" href="#"><b>Random Password Generator</b></a>
         </nav>
     </div>
 
@@ -31,22 +31,42 @@
                     <hr>
                     <br>
                     <input type="range" min="8" max="128" name="slider" id="slider">
-                    <br><br>
+                    <br>
+                    <div id="length"></div>
+                    <br>
                     <button onclick="generate()">Generate</button>
                     <button onclick="copyPassword()" style="float: right;">Copy to Clipboard</button>
-                    <div id="length"></div>
+                    <br><br><br>
+                    <div class="settings">
+                        <label for="uppercase">Include uppercase letters</label>
+                        <input type="checkbox" id="uppercase" checked>
+                    </div>
+                    <div>
+                        <label for="lowercase">Include lowercase letters</label>
+                        <input type="checkbox" id="lowercase" checked>
+                    </div>
+                    <div>
+                        <label for="numbers">Include numbers</label>
+                        <input type="checkbox" id="numbers" checked>
+                    </div>
+                    <div>
+                        <label for="symbols">Include symbols</label>
+                        <input type="checkbox" id="symbols" checked>
+                    </div>
                 </div>
-
+            </div>
+            <div class="container">
                 <div class="previous-passwords">
 
                     <b>Previously Generated Passwords</b>
                     <br>
                     <div id="lastNums"></div>
                 </div>
-
             </div>
 
         </div>
+
+    </div>
 
 
     </div>
