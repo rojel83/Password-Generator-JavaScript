@@ -43,13 +43,14 @@ clipboardEl.addEventListener('click', () => {
 
     if (!password) {
         return;
-
-        textarea.value = password;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        alert('Password copied to clipboard!');
     }
+
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    alert('Password copied to clipboard!');
+
 })
 
 //generate password function
